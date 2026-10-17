@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-image: url(imagens/fundo-gradiente-escuro-roxo.png);
+    background-size: cover;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.head img{
+    height: 120px;
+}
+
+
+ul{
+    padding: 20px;
+}
+
+.head a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+
+.head a:hover{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.inicio{
+    padding: 12rem;
+}
+
+.inicio h2{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.inicio span{
+    color: #FF634F;
+}
+
+
+.sobre-nos{
+    padding: 24rem 12rem;
+    gap: 20px;
+}
+
+.sobre-nos img{
+    height: 500px;
+    margin-left: auto;
+}
+
+
+.sobre-nos h1{
+    color: white;
+    font-size: 44px;
+}
+
+.sobre-nos p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nossos-projetos{
+    padding: 12rem 8rem;
+}
+
+.nossos-projetos h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+.card-projetos img{
+    height: 150px;
+    border-radius: 15px;
+}
+
+
+.card-projetos{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(167, 160, 160, 1);
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.card-projetos:hover{
+    transform: scale(1.04);
+    box-shadow: rgba(219, 219, 223, 0.2) 0px 7px 29px 0px;
+    background-color: rgba(192, 188, 188, 0.096);
+}
+
+.card-projetos p{
+    color: #d8dede;
+    margin-top: 20px;
+}
+
+.card-projetos h3{
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.container-projetos{
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.como-doar{
+    padding: 12rem 12rem;
+}
+
+.como-doar h3{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.como-doar p{
+    color: white;
+    margin: 12px 0;
+}
+
+.como-doar button{
+    margin-top: 12px;
+    padding: 15px 36px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.como-doar button:hover{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+
+.contatos{
+    padding: 16rem 12rem;
+}
+
+.contatos h3{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contatos h4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contatos p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+
+.sociais-container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+}
+
+
+.card-sociais1, .card-sociais2, .card-sociais3{
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+.card-sociais1 a, .card-sociais2 a, .card-sociais3 a{
+    color: white;
+    font-size: 20px;
+}
+
+
+.card-sociais1:hover{
+    background-color: #E4405F;
+    color: white;
+    box-shadow: #e4405e5b 0px 7px 29px 0px;
+}
+.card-sociais2:hover{
+    background-color: #25D366;
+    color: white;
+    box-shadow: #25d36546 0px 7px 29px 0px;
+}
+.card-sociais3:hover{
+    background-color: #1877F2;
+    color: white;
+    box-shadow: #1876f267 0px 7px 29px 0px;
+}
+
+
+
+@media (max-width: 1100px){
+
+    .inicio{
+        padding: 9rem 4rem;
+    }
+
+    .inicio h2{
+        font-size: 4rem;
+    }
+
+    .sobre-nos{
+        padding: 14rem 6rem;
+    }
+
+    .nossos-projetos{
+        padding: 8rem 4rem;
+    }
+
+    .container-projetos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .como-doar{
+        padding: 8rem 6rem;
+    }
+
+    .contatos{
+        padding: 8rem 6rem;
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .head img{
+        height: 90px;
+    }
+
+    .navbar{
+        display: none;
+
+
+    .inicio{
+        padding: 7rem 3rem;
+    }
+
+    .inicio h2{
+        font-size: 3.2rem;
+    }
+
+    .sobre-nos{
+        padding: 8rem 3rem;
+    }
+
+    .nossos-projetos{
+        padding: 6rem 3rem;
+    }
+
+    .como-doar{
+        padding: 6rem 3rem;
+    }
+
+    .contatos{
+        padding: 6rem 3rem;
+    }
+}
+
+
+@media (max-width: 600px){
+
+    .head img{
+        height: 64px;
+    }
+
+    .menu-btn{
+        margin-right: 12px;
+    }
+
+    .inicio{
+        padding: 5rem 1.5rem;
+    }
+
+    .inicio h2{
+        font-size: 2.2rem;
+    }
+
+    .sobre-nos{
+        padding: 4rem 1.5rem;
+    }
+
+    .sobre-nos h1{
+        font-size: 2rem;
+    }
+
+    .sobre-nos p{
+        font-size: 1rem;
+    }
+
+    .nossos-projetos{
+        padding: 4rem 1.5rem;
+    }
+
+    .nossos-projetos h2{
+        font-size: 1.6rem;
+    }
+
+    .container-projetos{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-projetos h3{
+        padding: 12px 0;
+        font-size: 1.3rem;
+    }
+
+    .card-projetos img{
+        width: 100%;
+        height: auto;
+    }
+
+    .como-doar{
+        padding: 4rem 1.5rem;
+    }
+
+    .como-doar h3{
+        font-size: 1.8rem;
+    }
+
+    .como-doar button{
+        width: 100%;
+    }
+
+    .contatos{
+        padding: 4rem 1.5rem;
+    }
+
+    .contatos h3{
+        font-size: 1.8rem;
+    }
+
+    .contatos p{
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    .sociais-container{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card-sociais1, .card-sociais2, .card-sociais3{
+        padding: 14px;
+    }
+}
+}
