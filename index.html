@@ -17,7 +17,7 @@
           <a href="#sobre-nos">Sobre nós</a>
           <a href="#nossos-projetos">Nossos projetos</a>
           <a href="#como-doar">Como doar</a>
-          <a href="#contatos">Contato</a>
+          <a href="#contatos">Contatos</a>
         </ul>
       </nav>
     </header>
@@ -78,11 +78,24 @@
 
     <section id="como-doar" class="como-doar">
         <h3>COMO DOAR</h3>
-        <p>Para doar, basta clicar no botão abaixo e você será redirecionado a página de doações.</p>
+        <p>Para doar, basta apenas colocar seu nome para gerar a chave Pix e identificarmos quem é você!</p>
 
-      <button>DOAR</button>
+        <h4>Seus dados</h4>
+
+
+        <form id="card-doacao" class="card-doacao">
+          
+          <label for="">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome">
+
+          <button class="submit">Gerar chave Pix</button>
+        </form>
+
+        <div id="resultado-pix" class="oculto">
+        </div>
+
+    </div>
     </section>
-
 
     <section id="contatos" class="contatos">
         <h3>CONTATOS</h3>
@@ -93,7 +106,6 @@
 
         <div class="sociais-container">
 
-          
           <div class="card-sociais1">
             <i class="fa-brands fa-instagram"></i></i>
             <span>Instagram</span>
@@ -110,5 +122,7 @@
           </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
